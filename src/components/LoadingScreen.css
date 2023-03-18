@@ -23,20 +23,34 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 
 .roll {
-  animation: roll 5s infinite;
+  animation: roll ease 5s infinite;
 }
 
 @keyframes roll {
   0% { 
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
-  25% { transform: translate(-70%, -40%) }
-  50% { transform: translate(-30%, -40%) }
-  75% { transform: translate(-30%, -60%) }
-  100% { transform: translate(-50%, -50%) }
+  25% {
+    transform: translate(-70%, -40%);
+    -webkit-transform: translate(-70%, -40%);
+  }
+  50% {
+    transform: translate(-30%, -40%);
+    -webkit-transform: translate(-30%, -40%);
+  }
+  75% {
+    transform: translate(-30%, -60%);
+    -webkit-transform: translate(-30%, -60%);
+  }
+  100% 
+    { transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+    }
 }
 
 .loading {
