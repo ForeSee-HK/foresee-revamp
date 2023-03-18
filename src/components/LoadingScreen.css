@@ -1,0 +1,61 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #258F8C;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+}
+
+.container img:first-child {
+  /* z-index: -1; */
+}
+
+.eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.roll {
+  animation: roll 5s infinite;
+}
+
+@keyframes roll {
+  0% { 
+    transform: translate(-50%, -50%)
+  }
+  25% { transform: translate(-70%, -40%) }
+  50% { transform: translate(-30%, -40%) }
+  75% { transform: translate(-30%, -60%) }
+  100% { transform: translate(-50%, -50%) }
+}
+
+.loading {
+  font-family: Comic Sans MS;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.loading::after {
+  content: "";
+  animation: loadingDots 2s infinite;
+}
+
+@keyframes loadingDots {
+  0% { content: "" }
+  33% { content: "." }
+  66% { content: ".." }
+  100% { content: "..." }
+}
+
