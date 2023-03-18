@@ -6,10 +6,8 @@ const LoadingScreen=()=> {
   return (
     <>
       <div className="main">
-        <div className="container"> 
-          <img src={Sclera} className="eye" /> 
-          <img src={Iris} className="eye roll" /> 
-        </div>
+        <img src={Sclera} className="eye" /> 
+        <img src={Iris} className="eye roll" /> 
         <div className="loading">Loading</div>
       </div>
     </>
