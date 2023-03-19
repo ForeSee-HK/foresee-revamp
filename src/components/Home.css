@@ -1,0 +1,7 @@
+.home {
+  height: 100vh;
+  background-color: green;
+  width: 100vw;
+  background: linear-gradient(180deg, #258F8C 0%, #CBEDD5 100%);
+  mix-blend-mode: normal;
+}

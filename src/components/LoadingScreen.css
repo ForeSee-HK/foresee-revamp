@@ -23,7 +23,7 @@ html, body {
 }
 
 .roll {
-  animation: roll 5s ease 0.3s infinite;
+  animation: roll 3s ease 0.3s infinite;
 }
 
 @keyframes roll {

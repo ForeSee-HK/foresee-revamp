@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import './Home.css'
 
 const Home = props => {
   useEffect(() => {
@@ -7,7 +8,9 @@ const Home = props => {
 
   return (
     <>
-      <p>testing</p>
+      <div className="home">
+        testing
+      </div>
     </>
   )
 }

@@ -6,7 +6,7 @@ import './App.css'
 
 const Home = lazy(() => {
   return new Promise (resolve => {
-    setTimeout(() => resolve(import("./components/Home.jsx")), 2000)
+    setTimeout(() => resolve(import("./components/Home.jsx")), 3000)
   })
 })
 
