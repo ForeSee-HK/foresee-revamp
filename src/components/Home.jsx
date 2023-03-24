@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import './Home.css'
+import styles from './Home.module.css'
 
 const Home = props => {
   useEffect(() => {
@@ -8,8 +8,10 @@ const Home = props => {
 
   return (
     <>
-      <div className="home">
-        testing
+      <div className={styles.home}>
+        <p>
+          testing
+        </p>
       </div>
     </>
   )
