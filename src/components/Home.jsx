@@ -9,9 +9,7 @@ const Home = props => {
   return (
     <>
       <div className={styles.home}>
-        <p>
-          testing
-        </p>
+        testing
       </div>
     </>
   )

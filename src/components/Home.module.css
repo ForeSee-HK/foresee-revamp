@@ -1,6 +1,8 @@
 .home {
-  height: 500px;
-  width: 100vw;
-  background: linear-gradient(180deg, #258F8C 0%, #CBEDD5 100%);
-  mix-blend-mode: normal;
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+  /* background: linear-gradient(180deg, #258F8C 0%, #CBEDD5 100%); */
+  /* mix-blend-mode: normal; */
+  border-color: black;
 }

@@ -15,20 +15,16 @@ const App = () => {
   }
 
   return (
-    <div className="App">
+    <>
       <Suspense fallback={ <LoadingScreen /> }>
         <Home onMount={OnChildMount} />
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sit numquam rerum accusantium maxime quam, odio laborum repellat est veniam nisi reiciendis blanditiis quis. Est enim odio non debitis officiis?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sit numquam rerum accusantium maxime quam, odio laborum repellat est veniam nisi reiciendis blanditiis quis. Est enim odio non debitis officiis?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sit numquam rerum accusantium maxime quam, odio laborum repellat est veniam nisi reiciendis blanditiis quis. Est enim odio non debitis officiis?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sit numquam rerum accusantium maxime quam, odio laborum repellat est veniam nisi reiciendis blanditiis quis. Est enim odio non debitis officiis?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sit numquam rerum accusantium maxime quam, odio laborum repellat est veniam nisi reiciendis blanditiis quis. Est enim odio non debitis officiis?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sit numquam rerum accusantium maxime quam, odio laborum repellat est veniam nisi reiciendis blanditiis quis. Est enim odio non debitis officiis?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sit numquam rerum accusantium maxime quam, odio laborum repellat est veniam nisi reiciendis blanditiis quis. Est enim odio non debitis officiis?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sit numquam rerum accusantium maxime quam, odio laborum repellat est veniam nisi reiciendis blanditiis quis. Est enim odio non debitis officiis?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sit numquam rerum accusantium maxime quam, odio laborum repellat est veniam nisi reiciendis blanditiis quis. Est enim odio non debitis officiis?</p>
+        <Home onMount={OnChildMount} />
+        <Home onMount={OnChildMount} />
+        <Home onMount={OnChildMount} />
+        <Home onMount={OnChildMount} />
+        <Home onMount={OnChildMount} />
       </Suspense>
-    </div>
+    </>
   )
 }
 
