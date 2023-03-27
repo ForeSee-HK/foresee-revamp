@@ -1,7 +1,7 @@
-import React, { Suspense, lazy } from 'react'
+import React, { Suspense, lazy, useRef, useEffect, useState } from 'react'
 import LoadingScreen from './components/LoadingScreen.jsx'
 import './App.css'
-// import { Route, Switch } from 'react-router-dom'
+import useElementOnScreen from './components/hooks/useElementOnScreen'
 
 const Home = lazy(() => {
   return new Promise (resolve => {
@@ -13,6 +13,12 @@ const App = () => {
   const OnChildMount = (componentName) => {
     console.log(componentName)
   }
+  
+  const [containerRef, isVisible] = useElementOnScreen({
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0
+  })
 
   return (
     <>
@@ -20,6 +26,9 @@ const App = () => {
         <Home onMount={OnChildMount} />
         <Home onMount={OnChildMount} />
         <Home onMount={OnChildMount} />
+        <div ref={containerRef}>
+          <p>{isVisible ? "Yes" : "No"}</p>
+        </div>
         <Home onMount={OnChildMount} />
         <Home onMount={OnChildMount} />
         <Home onMount={OnChildMount} />
