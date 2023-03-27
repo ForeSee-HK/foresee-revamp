@@ -1,5 +1,4 @@
 import React, { Suspense, lazy } from 'react'
-import reactLogo from './assets/react.svg'
 import LoadingScreen from './components/LoadingScreen.jsx'
 import './App.css'
 // import { Route, Switch } from 'react-router-dom'
@@ -16,11 +15,16 @@ const App = () => {
   }
 
   return (
-    <div className="App">
+    <>
       <Suspense fallback={ <LoadingScreen /> }>
         <Home onMount={OnChildMount} />
+        <Home onMount={OnChildMount} />
+        <Home onMount={OnChildMount} />
+        <Home onMount={OnChildMount} />
+        <Home onMount={OnChildMount} />
+        <Home onMount={OnChildMount} />
       </Suspense>
-    </div>
+    </>
   )
 }
 
