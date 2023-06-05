@@ -11,4 +11,89 @@
     
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+.NavText {
+    font-family: 'Arya';
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: 116px; */
+
+    color: #E2EDFF;
+    top: 50%;
+    font-size: 30px;
+}
+
+.NavIcon {
+    top: 50%;
+    max-height:100%;
+}
+
+.NavProgress {
+    width: 70%
+}
+
+.container {
+    width: auto;
+}
+  
+  a {
+    text-decoration: none;
+    display: block;
+  }
+.progressStep img{
+    width: 15px;
+}
+.progressbar {
+    counter-reset: step;
+}
+.progressStep {
+    list-style-type: none;
+    width: 14%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7d7d7d;
+}
+.progressStep:before {
+    width: 30px;
+    height: 30px;
+    content: '';
+    line-height: 30px;
+    border: 2px solid #7d7d7d;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+}
+.progressStep:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #7d7d7d;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+.progressStep:first-child:after {
+    content: none;
+}
+li.active:before {
+    border-color: #e2edff;
+    border-width: 2px;
+}
+li.active + li:after {
+    background-color: #e2edff;
+}
+
+li.active:nth-child(2):before {
+    background: url('../assets/icons/magnify.svg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: white;
+  }
