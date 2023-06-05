@@ -1,7 +1,11 @@
+import * as React from 'react';
+import styles from './NavProgress.module.css'
+import Eye from '../assets/eye.svg'
+
 const NavProgress = (props) => {
     return (
-    <div className="nav-progress" style={{ position: 'sticky', top: 0, background: '#fff', margin: 0, widith: "100%" }}>
-      {/* <div className="progress-bar" style={{ width: props.progress + '%' }}></div> */}
+    <div className={styles.NavDiv}>
+      <img src={Eye} /> 
       <div>{props.progress}</div>
     </div>
   );

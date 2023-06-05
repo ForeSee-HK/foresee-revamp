@@ -1,0 +1,14 @@
+.NavDiv { 
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1;
+    height: 70px;
+    margin: 0;
+    width: "100%" ;
+    background-color: #62b6b7;
+    padding: 8px;
+    
+    display: flex;
+    justify-content: space-between;
+}
