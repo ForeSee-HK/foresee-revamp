@@ -30,7 +30,12 @@ export default function useInView(refs) {
         }
       });
     };
-    const observer = new IntersectionObserver(observerCallback);
+    let options = {
+      rootMargin: "0px",
+      threshold: 0.9,
+    };
+
+    const observer = new IntersectionObserver(observerCallback, options);
 
     refs.forEach((ref) => {
       if (ref.current) observer.observe(ref.current);

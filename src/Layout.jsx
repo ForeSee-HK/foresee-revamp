@@ -25,14 +25,6 @@ const Layout = () => {
                 return latest
               }
             }, 0)} />
-        {/* <h1 style={{ position: 'sticky', top: 0, background: '#fff', margin: 0, widith: "100%" }}>
-            Elements currently in view:
-            {console.log(observedElements)}
-            {Object.keys(observedElements).map((key) => {
-              return <span key={key}>{observedElements[key].isInView ? key : ''}</span>;
-            })}
-        </h1> */}
-
 
         {/* Page Content Below */}
         
