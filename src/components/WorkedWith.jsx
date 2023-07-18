@@ -8,7 +8,7 @@ const WorkedWith = forwardRef(function WorkedWith(props, ref) {
   return (
     <>
       <div className={styles.workedWith} ref={ref} nav-show={props.id}>
-        <div>
+        <div className={styles.titleDiv}>
           <span>Proudly Worked With</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="550" height="10" viewBox="0 0 650 10" fill="none">
             <path d="M0 5H650" stroke="#258F8C" strokeWidth="6" />
