@@ -4,7 +4,7 @@ import Eye from '../assets/eye.svg'
 
 const NavProgress = (props) => {
   const progressSteps = []
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 6; i++) {
     progressSteps.push(
       <li
         key={i}
