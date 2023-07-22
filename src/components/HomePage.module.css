@@ -1,0 +1,22 @@
+.homePage {
+  height: 125vh;
+  width: 100%;
+  align-items: center;
+  background-image: url(../assets/homePage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.buttonApp {
+  background-color: #258f8c;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.buttonApp:hover {
+  background-color: #1c736f;
+}
