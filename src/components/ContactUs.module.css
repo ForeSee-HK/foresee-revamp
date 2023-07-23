@@ -22,3 +22,20 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.desktopDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.desktopDiv img {
+  width: 150px;
+}
+
+.desktopDiv span {
+  font-size: 20px;
+  font-family: Arya;
+}
