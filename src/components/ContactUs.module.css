@@ -22,3 +22,52 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.desktopDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.desktopDiv img {
+  width: 150px;
+}
+
+.desktopDiv span {
+  font-size: 20px;
+  font-family: Arya;
+}
+
+.mobileDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns with equal width */
+  grid-template-rows: repeat(3, 70px);
+  /* Three rows with a fixed height of 100px */
+  justify-items: baseline;
+  align-items: center;
+  column-gap: 50px;
+  row-gap: 30px;
+}
+
+.mobileDiv img {
+  width: 70px;
+}
+
+.mobileDiv span {
+  font-size: 20px;
+  font-family: Arya;
+}
+
+.mobileDiv div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  /* background-color: #62B6B7; */
+}
