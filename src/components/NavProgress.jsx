@@ -16,7 +16,7 @@ const NavProgress = (props) => {
   return (
     <div className={styles.NavDiv}>
       <img src={Eye} className={styles.NavIcon} />
-      <span className={styles.NavText}>ForseSee</span>
+      <span className={styles.NavText}>ForeSee</span>
       <div className={styles.NavProgress}>
         <div className={styles.container}>
           <ul className={styles.progressBar}>
