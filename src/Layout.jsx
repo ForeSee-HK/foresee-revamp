@@ -5,18 +5,20 @@ import NavProgress from './components/NavProgress'
 import Example from './components/Example'
 import WorkedWith from './components/WorkedWith'
 import ContactUs from './components/ContactUs'
+import HomePageRef from './components/HomePage'
+import AppsPageRef from './components/AppsPage'
 
 const Layout = () => {
 
   // Example Refs
-  const exampleRef0 = useRef(null)
-  const exampleRef1 = useRef(null)
+  const homePageRef = useRef(null)
+  const appsPageRef = useRef(null)
   const exampleRef2 = useRef(null)
   const exampleRef3 = useRef(null)
   const workedWithRef = useRef(null)
   const contactUsRef = useRef(null)
 
-  const observedElements = useInView([exampleRef0, exampleRef1, exampleRef2, exampleRef3, workedWithRef, contactUsRef])
+  const observedElements = useInView([homePageRef, appsPageRef, exampleRef2, exampleRef3, workedWithRef, contactUsRef])
 
   // const observedElements = useInView([])
 
@@ -33,8 +35,8 @@ const Layout = () => {
       {/* Page Content Below */}
 
       {/* Examples below, uncomment to view the demo */}
-      <Example ref={exampleRef0} id="0" />
-      <Example ref={exampleRef1} id="1" />
+      <HomePageRef ref={homePageRef} id="0" />
+      <AppsPageRef ref={appsPageRef} id="1" />
       <Example ref={exampleRef2} id="2" />
       <Example ref={exampleRef3} id="3" />
       <WorkedWith ref={workedWithRef} id="4" />

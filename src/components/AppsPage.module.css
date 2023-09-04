@@ -1,0 +1,61 @@
+.appsPage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.appsPage span {
+  color: #000;
+  text-align: center;
+  font-family: Arya;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+
+.col div {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.col row {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+}
+
+.col row img {
+  width: 5vw;
+}
+
+.col row span {
+  color: #000;
+  text-align: center;
+  font-family: Arya;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.col img {
+  width: 20vw;
+}
