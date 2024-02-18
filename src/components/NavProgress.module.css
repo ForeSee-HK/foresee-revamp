@@ -6,7 +6,7 @@
     height: 70px;
     margin: 0;
     width: "100%";
-    background-color: #62b6b7;
+    background-color: #B4D9F6;
     padding: 8px;
 
     display: flex;
@@ -17,10 +17,10 @@
 .NavText {
     font-family: 'Arya';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     /* line-height: 116px; */
-
-    color: #E2EDFF;
+    margin-left: 20px;
+    color: #001E30;
     top: 50%;
     font-size: 30px;
 }
@@ -31,11 +31,20 @@
 }
 
 .NavProgress {
-    width: 70%
+    width: 70%;
+    display: flex;
+    justify-content: end;
+
 }
 
 .container {
-    width: auto;
+    width: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: transparent;
+    padding-right: 0;
+
 }
 
 .progressBar>li img {

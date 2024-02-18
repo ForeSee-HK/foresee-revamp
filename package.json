@@ -9,12 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mdi/react": "^1.6.1",
+    "mdi-react": "^9.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.3",
     "react-native": "^0.71.8",
     "react-native-vector-icons": "^9.2.0",
-    "react-router-dom": "^6.9.0"
+    "react-pro-sidebar": "^1.1.0",
+    "react-router-dom": "^6.9.0",
+    "react-sidebar": "^3.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

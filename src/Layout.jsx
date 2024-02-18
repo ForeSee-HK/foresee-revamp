@@ -25,6 +25,7 @@ const Layout = () => {
 
   return (
     <div >
+   
       <NavProgress progress={Object.keys(observedElements).reduce((latest, key) => {
         if (observedElements[key].isInView) {
           return (key > latest) ? key : latest
