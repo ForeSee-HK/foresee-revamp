@@ -7,6 +7,11 @@ import CloseIcon from 'mdi-react/CloseIcon';
 import { useState } from "react";
 import MainMenu from "./mainMenu";
 import Sidebar from "react-sidebar";
+import OurStory from "./OurStory";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
+
 
 
 
@@ -69,15 +74,37 @@ class NavProgress extends React.Component {
       {/* refer to https://github.com/balloob/react-sidebar#readme for sidebar documentation */}
       <Sidebar
         sidebar={
-          <div><CloseIcon size={30} style={{backgroundColor:'transparent', position:'absolute',right:30,top:30 }} onClick={()=>{this.onSetSidebarOpen(false)}}/>
+
+          
+          <div>
+             
+            <CloseIcon size={30} style={{backgroundColor:'transparent', position:'absolute',right:30,top:30 }} onClick={()=>{this.onSetSidebarOpen(false)}}/>
         <div className={styles.sidebarLabels}>
-          <h2>Home</h2>
-          <h2>About ForeSee</h2>
-          <h2>Join ForeSee</h2>
-          <h2>Events</h2>
-          <h2>Educational Games</h2>
-          </div>
-        </div>}
+        <nav>
+       
+          <h2 style={{color:'green'}}>
+            <Link to="/">Home</Link>
+          </h2>
+          <h2>
+            <Link to="/About">About ForeSee</Link>
+          </h2>
+          <h2>
+            <Link to="/Join">Join ForeSee</Link>
+          </h2>
+          <h2>
+            <Link to="/Events">Events</Link>
+          </h2>
+          <h2>
+            <Link to="/Games">Educational Games</Link>
+          </h2>
+       
+      </nav>
+
+      {/* <Outlet /> */}
+
+        </div>
+        </div>
+        }
         open={this.state.sidebarOpen}
         onSetOpen={this.onSetSidebarOpen}
         pullRight={true}

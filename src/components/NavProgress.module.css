@@ -47,7 +47,10 @@ display: flex;
 flex-direction: column;
 align-items: start;
 }
-.sidebarLabels>h2:hover{
+.sidebarLabels>nav>h2{
+    color: green !important;
+}
+.sidebarLabels>nav>h2:hover{
 text-decoration: underline;
 }
 

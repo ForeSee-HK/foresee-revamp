@@ -8,6 +8,8 @@ import WorkedWith from './components/WorkedWith'
 import ContactUs from './components/ContactUs'
 import HomePageRef from './components/HomePage'
 import AppsPageRef from './components/AppsPage'
+import { Outlet, Link } from "react-router-dom";
+
 
 const Layout = () => {
 
@@ -25,7 +27,6 @@ const Layout = () => {
 
   return (
     <div >
-   
       <NavProgress progress={Object.keys(observedElements).reduce((latest, key) => {
         if (observedElements[key].isInView) {
           return (key > latest) ? key : latest
@@ -37,12 +38,13 @@ const Layout = () => {
       {/* Page Content Below */}
 
       {/* Examples below, uncomment to view the demo */}
-      <HomePageRef ref={homePageRef} id="0" />
+      {/* <HomePageRef ref={homePageRef} id="0" />
       <AppsPageRef ref={appsPageRef} id="1" />
       <Community ref={communityRef} id="2" />
       <OurStory ref={ourStoryRef} id="3" />
       <WorkedWith ref={workedWithRef} id="4" />
-      <ContactUs ref={contactUsRef} id="5" />
+      <ContactUs ref={contactUsRef} id="5" /> */}
+      <Outlet/>
     </div>
   )
 }
