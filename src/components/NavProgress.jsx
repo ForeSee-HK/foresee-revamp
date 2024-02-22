@@ -79,30 +79,30 @@ class NavProgress extends React.Component {
           <div>
              
             <CloseIcon size={30} style={{backgroundColor:'transparent', position:'absolute',right:30,top:30 }} onClick={()=>{this.onSetSidebarOpen(false)}}/>
-        <div className={styles.sidebarLabels}>
-        <nav>
+    
+        <nav className={styles.sidebarLabels}>
        
-          <h2 style={{color:'green'}}>
-            <Link to="/">Home</Link>
+          <h2 >
+            <Link to="/"className={styles.sidebarButtons} >Home</Link>
           </h2>
           <h2>
-            <Link to="/About">About ForeSee</Link>
+            <Link to="/About" className={styles.sidebarButtons}>About ForeSee</Link>
           </h2>
           <h2>
-            <Link to="/Join">Join ForeSee</Link>
+            <Link to="/Join" className={styles.sidebarButtons}>Join ForeSee</Link>
           </h2>
           <h2>
-            <Link to="/Events">Events</Link>
+            <Link to="/Events" className={styles.sidebarButtons}>Events</Link>
           </h2>
           <h2>
-            <Link to="/Games">Educational Games</Link>
+            <Link to="/Games" className={styles.sidebarButtons}>Educational Games</Link>
           </h2>
        
       </nav>
 
       {/* <Outlet /> */}
 
-        </div>
+       
         </div>
         }
         open={this.state.sidebarOpen}

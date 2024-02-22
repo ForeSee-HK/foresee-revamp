@@ -47,10 +47,11 @@ display: flex;
 flex-direction: column;
 align-items: start;
 }
-.sidebarLabels>nav>h2{
-    color: green !important;
+.sidebarButtons {
+    color: #001E30 ;
+    font-size: 30;
 }
-.sidebarLabels>nav>h2:hover{
+.sidebarLabels>h2:hover{
 text-decoration: underline;
 }
 
