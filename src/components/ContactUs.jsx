@@ -32,7 +32,8 @@ const ContactUs = forwardRef(function ContactUs(props, ref) {
   }, []);
 
   const handleClick = (url) => {
-    window.open(url, '_blank');
+    console.log('testing')
+    // window.open(url, '_blank');
   };
 
   return (
@@ -47,7 +48,20 @@ const ContactUs = forwardRef(function ContactUs(props, ref) {
         </div>
         {isDesktop ? (
           <div className={styles.desktopDiv}>
-            <div style={{ "display": "flex", "flexDirection": "column" }}>
+            
+          <div className={styles.contactCols}></div>
+          <div className={styles.contactCols} style={{backgroundColor:"transparent"}}>
+            <form  style={{height:"100%",width:"100%"}}>
+            <textarea placeholder="Name" className={styles.contactForm}/>
+            <br></br>
+            <textarea placeholder="Email" className={styles.contactForm}/>
+            <br></br>
+            <textarea placeholder="Notes and Remarks" className={styles.contactForm}/>
+            <br></br>
+            <input type="button" value="Submit" className={styles.contactSubmit} onClick={()=>handleClick()}/>
+          </form>
+          </div>
+            {/* <div style={{ "display": "flex", "flexDirection": "column" }}>
               <img src={InstagramQR} alt="Instagram" />
               <span>Instagram</span>
             </div>
@@ -70,7 +84,7 @@ const ContactUs = forwardRef(function ContactUs(props, ref) {
             <div style={{ "display": "flex", "flexDirection": "column" }}>
               <img src={YouTubeQR} alt="YouTube" />
               <span>YouTube</span>
-            </div>
+            </div> */}
           </div>
         ) : (
           <div className={styles.mobileDiv}>
