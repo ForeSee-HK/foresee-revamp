@@ -26,11 +26,8 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react-swc": "^3.0.0",
-<<<<<<< HEAD
     "react-router-dom": "^6.22.1",
-=======
     "gh-pages": "^6.0.0",
->>>>>>> origin/main
     "vite": "^4.1.0"
   }
 }
