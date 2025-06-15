@@ -10,6 +10,7 @@ import Join from "./components/pages/Join.jsx"
 import Events from "./components/pages/Events.jsx"
 import Games from "./components/pages/Games.jsx"
 import Home from "./components/pages/Home.jsx"
+import Event from "./components/pages/Event.jsx"
 const Layout = lazy(() => {
   return new Promise (resolve => {
     setTimeout(() => resolve(import("./Layout.jsx")), 3000)
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="join" element={<Join/>} />
           <Route path="events" element={<Events/>} />
           <Route path="games" element={<Games/>} />
+          <Route path="event" element={<Event/>}/>
          
         </Route>
       </Routes>
